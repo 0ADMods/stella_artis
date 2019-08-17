@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Radar crewmen">
+      <mesh>props/units/terran/spacesuit_helmet.dae</mesh>
+      <textures>
+        <texture file="props/units/terran/spacesuit_helmet.png" name="baseTex"/>
+        <texture file="props/units/terran/spec/spacesuit_helmet.png" name="specTex"/>
+        <texture file="props/units/terran/norm/spacesuit_helmet.png" name="normTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans_parallax_spec.xml</material>
+</actor>

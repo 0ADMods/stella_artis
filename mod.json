@@ -1,0 +1,8 @@
+{
+	"name": "stella-artis",
+	"version": "1.0.0",
+	"label": "Stella Artis",
+	"url": "",
+	"description": "",
+	"dependencies": ["0ad>=0.0.23"]
+}
