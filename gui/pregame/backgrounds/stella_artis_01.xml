@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprites>
+  <sprite name="stella_artis_01">
+    <image texture="pregame/backgrounds/stella_artis_01.png" fixed_h_aspect_ratio="2" round_coordinates="false" />
+  </sprite>
+</sprites>
