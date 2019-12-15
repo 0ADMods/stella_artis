@@ -2,8 +2,8 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant frequency="1" name="Radar crewmen">
-      <mesh>structures/terran/supply-depot.dae</mesh>
+    <variant frequency="1" name="Supply Depot">
+      <mesh>structures/terran/supply_depot.dae</mesh>
       <textures>
         <texture file="structural/terran/supply_depot_albe.png" name="baseTex"/>
         <texture file="structural/terran/supply_depot_spec.png" name="specTex"/>

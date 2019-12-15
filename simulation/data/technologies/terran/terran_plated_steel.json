@@ -1,0 +1,35 @@
+{
+    "genericName": "Terran Plated Steel",
+    "description": "TBD.",
+    "cost": {
+        "food": 150,
+        "wood": 150,
+        "stone": 0,
+        "metal": 0
+    },
+    "icon": "terran/terran_plated_steel.png",
+    "researchTime": 100,
+    "tooltip": "Increases the armor of all Terran structures by 2. Increases the cargo space of Bunkers by 2 and the load space of Command Centers and Planetary Fortresses by 5.",
+    "modifications": [
+        {
+            "value": "Armour/Hack",
+            "add": 2
+        },
+        {
+            "value": "Armour/Pierce",
+            "add": 2
+        },
+        {
+            "value": "Armour/Crush",
+            "add": 2
+        },
+        {
+            "value": "GarrisonHolder/Max",
+            "add": 5
+        }
+    ],
+    "affects": [
+        "Structure"
+    ],
+    "soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic">
+  <Armour>
+    <Hack>3</Hack>
+    <Pierce>3</Pierce>
+    <Crush>3</Crush>
+    <Foundation>
+      <Hack>1</Hack>
+      <Pierce>1</Pierce>
+      <Crush>1</Crush>
+    </Foundation>
+  </Armour>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Category>CivilCentre</Category>
+    <Distance>
+      <FromClass>CivilCentre</FromClass>
+      <MinDistance>200</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Cost>
+    <PopulationBonus>15</PopulationBonus>
+    <BuildTime>71</BuildTime>
+    <Resources>
+      <food>400</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <BuildingAI>
+    <DefaultArrowCount>5</DefaultArrowCount>
+    <GarrisonArrowMultiplier>0</GarrisonArrowMultiplier>
+  </BuildingAI>
+  <Capturable disable="" />
+  <GarrisonHolder>
+    <Max>5</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Infantry Cavalry</List>
+    <BuffHeal>1</BuffHeal>
+    <LoadingRange>1</LoadingRange>
+  </GarrisonHolder>
+  <Footprint>
+    <Square width="22.0" depth="22.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1500</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>terran</Civ>
+    <Classes datatype="tokens">Defensive CivCentre</Classes>
+    <Icon>structures/terran/civic_center.png</Icon>
+    <Tooltip>Build to acquire large tracts of territory. Train citizens.</Tooltip>
+    <VisibleClasses datatype="tokens">CivilCentre</VisibleClasses>
+    <SpecificName>Command Center</SpecificName>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="20.0"/>
+  </Obstruction>
+  <Loot>
+    <xp>0</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+  </Loot>
+  <ResourceDropsite>
+    <Types>food wood</Types>
+    <Sharable>true</Sharable>
+  </ResourceDropsite>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_civ_center.xml</select>
+      <constructed>interface/complete/building/complete_civ_center.xml</constructed>
+      <alert_raise>interface/alarm/alarm_alert_0.xml</alert_raise>
+      <alert_end>interface/alarm/alarm_alert_1.xml</alert_end>
+    </SoundGroups>
+  </Sound>
+  <ProductionQueue replace="">
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <TechCostMultiplier>
+      <food>1.0</food>
+      <wood>1.0</wood>
+      <stone>1.0</stone>
+      <metal>1.0</metal>
+      <time>1.0</time>
+    </TechCostMultiplier>
+    <Entities datatype="tokens">
+      units/{civ}_worker
+    </Entities>
+  </ProductionQueue>
+  <TerritoryInfluence disable=""/>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/terran/civic_center.xml</Actor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

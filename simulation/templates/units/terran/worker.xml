@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_spearman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>0.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>4</MaxRange>
+      <PrepareTime>0</PrepareTime>
+      <RepeatTime>1070</RepeatTime>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Promotion disable=""/>
+  <Armour>
+    <Hack>1</Hack>
+    <Pierce>1</Pierce>
+    <Crush>1</Crush>
+  </Armour>
+  <Builder replace="">
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/terran/engineering_bay
+      structures/terran/civic_center
+      structures/terran/supply_depot
+    </Entities>
+  </Builder>
+  <Identity>
+    <Civ>terran</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Worker</SpecificName>
+    <GenericName>Worker</GenericName>
+    <Icon>units/terran/worker.png</Icon>
+    <SelectionGroupName>units/worker</SelectionGroupName>
+  </Identity>
+  <VisualActor>
+    <Actor>units/terran/worker.xml</Actor>
+  </VisualActor>
+</Entity>
