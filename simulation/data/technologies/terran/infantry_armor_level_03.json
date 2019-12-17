@@ -1,0 +1,30 @@
+{
+	"genericName": "Infantry Armor Level 3",
+	"description": "TBD.",
+	"cost": {
+		"food": 250,
+		"wood": 250
+	},
+	"supersedes": "terran/infantry_armor_level_02",
+	"icon": "terran/infantry_armor_level_03.png",
+	"researchTime": 157,
+	"tooltip": "Increases the armor of Terran infantry units.",
+	"modifications": [
+		{
+			"value": "Armour/Hack",
+			"add": 1
+		},
+		{
+			"value": "Armour/Pierce",
+			"add": 1
+		},
+		{
+			"value": "Armour/Crush",
+			"add": 1
+		}
+	],
+	"affects": [
+		"Infantry"
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

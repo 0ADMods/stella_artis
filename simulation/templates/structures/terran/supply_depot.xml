@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic_house_big">
   <Armour>
-    <Hack>3</Hack>
-    <Pierce>3</Pierce>
-    <Crush>3</Crush>
+    <Hack>1</Hack>
+    <Pierce>1</Pierce>
+    <Crush>1</Crush>
     <Foundation>
       <Hack>1</Hack>
       <Pierce>1</Pierce>
       <Crush>1</Crush>
     </Foundation>
   </Armour>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
   <Footprint>
     <Square width="10.0" depth="10.0"/>
     <Height>1.0</Height>
@@ -18,9 +21,11 @@
     <Max>400</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
   </Health>
+  <Capturable disable="" />
+  <ProductionQueue disable=""/>
   <Cost>
     <PopulationBonus>8</PopulationBonus>
-    <BuildTime>30</BuildTime>
+    <BuildTime>21</BuildTime>
     <Resources>
       <food>100</food>
       <wood>0</wood>
@@ -31,9 +36,11 @@
   <Obstruction>
     <Static width="8.0" depth="8.0"/>
   </Obstruction>
+  <TerritoryInfluence disable=""/>
   <Identity>
     <Civ>terran</Civ>
-    <SpecificName>Oîkos</SpecificName>
+    <SpecificName>Supply Depot</SpecificName>
+    <Icon>structures/terran/supply_depot.png</Icon>
   </Identity>
   <VisualActor>
     <Actor>structures/terran/supply_depot_glow.xml</Actor>

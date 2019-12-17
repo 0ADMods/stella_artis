@@ -1,0 +1,30 @@
+{
+	"genericName": "Infantry Weapons Level 3",
+	"description": "TBD.",
+	"cost": {
+		"food": 250,
+		"wood": 250
+	},
+	"supersedes": "terran/infantry_weapons_level_02",
+	"icon": "terran/infantry_weapons_level_03.png",
+	"researchTime": 157,
+	"tooltip": "Increase the damage of Terran infantry units. Requires an Armory",
+	"modifications": [
+		{
+			"value": "Attack/Melee/Damage/Hack",
+			"multiply": 1.2
+		},
+		{
+			"value": "Attack/Melee/Damage/Pierce",
+			"multiply": 1.2
+		},
+		{
+			"value": "Attack/Melee/Damage/Crush",
+			"multiply": 1.2
+		}
+	],
+	"affects": [
+		"Infantry Melee"
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

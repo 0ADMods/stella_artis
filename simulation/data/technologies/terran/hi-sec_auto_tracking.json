@@ -1,0 +1,21 @@
+{
+	"genericName": "Infantry Weapons Level 3",
+	"description": "TBD.",
+	"cost": {
+		"food": 100,
+		"wood": 100
+	},
+	"icon": "terran/hi-sec_auto_tracking.png",
+	"researchTime": 57,
+	"tooltip": "Adds +4 attack range to Auto-Turrets, Missile Turrets, and Planetary Fortresses.",
+	"modifications": [
+		{
+			"value": "Attack/Ranged/MaxRange",
+			"add": 4
+		}
+	],
+	"affects": [
+		"Structure"
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

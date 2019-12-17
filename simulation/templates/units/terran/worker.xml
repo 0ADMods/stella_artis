@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_unit_infantry_melee_spearman">
+  <Armour>
+    <Hack>0</Hack>
+    <Pierce>0</Pierce>
+    <Crush>0</Crush>
+  </Armour>
+  <Cost>
+    <BuildTime>17</BuildTime>
+    <Resources>
+      <food>50</food>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>45</Max>
+  </Health>
   <Attack>
     <Melee>
       <Damage>
@@ -14,19 +28,19 @@
     </Melee>
   </Attack>
   <Promotion disable=""/>
-  <Armour>
-    <Hack>1</Hack>
-    <Pierce>1</Pierce>
-    <Crush>1</Crush>
-  </Armour>
   <Builder replace="">
     <Rate>1.0</Rate>
     <Entities datatype="tokens">
       structures/terran/engineering_bay
       structures/terran/civic_center
       structures/terran/supply_depot
+      structures/terran/bunker
+      structures/terran/refinery
     </Entities>
   </Builder>
+  <UnitMotion>
+    <WalkSpeed>11.24</WalkSpeed>
+  </UnitMotion>
   <Identity>
     <Civ>terran</Civ>
     <Lang>greek</Lang>

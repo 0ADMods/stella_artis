@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="structures/terran/civic_center">
+  <Armour>
+    <Hack>3</Hack>
+    <Pierce>3</Pierce>
+    <Crush>3</Crush>
+    <Foundation>
+      <Hack>1</Hack>
+      <Pierce>1</Pierce>
+      <Crush>1</Crush>
+    </Foundation>
+  </Armour>
+  <Upgrade disable="" />
+  <Identity>
+    <Classes datatype="tokens">Defensive CivCentre</Classes>
+    <Icon>structures/terran/planetary_fortress.png</Icon>
+    <SpecificName>Planetary Fortress</SpecificName>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/terran/planetary_fortress.xml</Actor>
+  </VisualActor>
+</Entity>

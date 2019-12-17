@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_military">
+  <Armour>
+    <Hack>1</Hack>
+    <Pierce>1</Pierce>
+    <Crush>1</Crush>
+    <Foundation>
+      <Hack>1</Hack>
+      <Pierce>1</Pierce>
+      <Crush>1</Crush>
+    </Foundation>
+  </Armour>
   <Cost>
     <BuildTime>25</BuildTime>
     <Resources>
@@ -16,7 +26,6 @@
     <GenericName>Engineering Bay</GenericName>
     <SpecificName>Engineering Bay</SpecificName>
     <Icon>structures/terran/engineering_bay.png</Icon>
-    <RequiredTechnology>phase_town</RequiredTechnology>
     <Tooltip>Research weapons and armor improvements.</Tooltip>
     <VisibleClasses datatype="tokens">Blacksmith</VisibleClasses>
   </Identity>
@@ -28,6 +37,12 @@
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Technologies datatype="tokens">
       terran/terran_plated_steel
+      terran/infantry_armor_level_01
+      terran/infantry_armor_level_02
+      terran/infantry_armor_level_03
+      terran/infantry_weapons_level_01
+      terran/infantry_weapons_level_02
+      terran/infantry_weapons_level_03
     </Technologies>
   </ProductionQueue>
   <GarrisonHolder disable=""/>
@@ -40,6 +55,9 @@
   <Obstruction>
     <Static width="12.0" depth="12.0"/>
   </Obstruction>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+  </BuildRestrictions>
   <Health>
     <Max>850</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>

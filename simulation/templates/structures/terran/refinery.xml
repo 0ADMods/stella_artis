@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <ResourceTrickle>
+    <Rates>
+      <wood>4.0</wood>
+    </Rates>
+    <Interval>4000</Interval>
+  </ResourceTrickle>
+  <Cost>
+    <BuildTime>21</BuildTime>
+    <Resources>
+      <food>75</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="14.0" depth="14.0"/>
+    <Height>4.0</Height>
+  </Footprint>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Category>Refinery</Category>
+    <Distance>
+      <FromClass>Refinery</FromClass>
+      <MinDistance>600</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <GarrisonHolder disable=""/>
+  <Capturable disable=""/>
+  <Identity>
+    <GenericName>Refinery</GenericName>
+    <Icon>structures/terran/refinery.png</Icon>
+    <RequiredTechnology></RequiredTechnology>
+    <VisibleClasses datatype="tokens">Refinery</VisibleClasses>
+  </Identity>
+  <Loot>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>0</stone>
+  </Loot>
+  <Obstruction>
+    <Static width="12.0" depth="12.0"/>
+  </Obstruction>
+  <ProductionQueue disable=""/>
+  <RallyPoint disable=""/>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_ffactri.xml</select>
+      <constructed>interface/complete/building/complete_ffactri.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <Actor>structures/terran/refinery.xml</Actor>
+    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
+  </VisualActor>
+</Entity>

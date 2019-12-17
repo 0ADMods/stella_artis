@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_structure_civic">
   <Armour>
-    <Hack>3</Hack>
-    <Pierce>3</Pierce>
-    <Crush>3</Crush>
+    <Hack>1</Hack>
+    <Pierce>1</Pierce>
+    <Crush>1</Crush>
     <Foundation>
       <Hack>1</Hack>
       <Pierce>1</Pierce>
@@ -89,9 +89,22 @@
       <time>1.0</time>
     </TechCostMultiplier>
     <Entities datatype="tokens">
-      units/{civ}_worker
+      units/terran/worker
     </Entities>
   </ProductionQueue>
+  <Upgrade>
+    <PlanetaryFortress>
+      <Entity>structures/terran/planetary_fortress</Entity>
+      <Tooltip>Reinforce with stone block, and install small torsion engines to upgrade this defense tower into an artillery tower.</Tooltip>
+      <RequiredTechnology>phase_city</RequiredTechnology>
+      <Cost>
+        <wood>150</wood>
+        <food>150</food>
+      </Cost>
+      <Time>36</Time>
+      <Variant>upgrading</Variant>
+    </PlanetaryFortress>
+  </Upgrade>
   <TerritoryInfluence disable=""/>
   <Vision>
     <Range>90</Range>
